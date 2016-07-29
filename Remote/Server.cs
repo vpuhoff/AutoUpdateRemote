@@ -18,7 +18,7 @@ namespace Remote
 
         public void CreateServer()
         {
-            Console.WriteLine("Remote Server started...");
+            Console.WriteLine("Сервер запущен... Порт:"+port.ToString());
 
             var tcpChannel = new TcpChannel(port);
             System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel(tcpChannel, true);

@@ -35,8 +35,10 @@ namespace Remote
             
 
             Type requiredType = typeof(ISharedTypeInterface);
+            int retcnt = 0;
            ret1: try
             {
+                retcnt++;
                 RemoteObject = (ISharedTypeInterface)Activator.GetObject(requiredType,
            "tcp://" + host + ":" + port + "/RemoteService");
                 string stat = RemoteObject.GetStatus();
@@ -48,7 +50,10 @@ namespace Remote
             catch (Exception ee)
             {
                 Console.WriteLine(ee);
-                goto ret1;
+                if (retcnt<3)
+                {
+                    goto ret1;
+                }
             }
         }
         string ProjDir = "\\Projects\\";
