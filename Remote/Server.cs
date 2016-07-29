@@ -25,7 +25,7 @@ namespace Remote
 
             var commonInterfaceType = Type.GetType("Remote.SharedType");
 
-            System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownServiceType(commonInterfaceType, "RemoteService", WellKnownObjectMode.SingleCall);
+            System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownServiceType(commonInterfaceType, "RemoteService", WellKnownObjectMode.Singleton );
 
         }
     }

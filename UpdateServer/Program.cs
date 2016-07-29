@@ -11,7 +11,7 @@ namespace UpdateServer
     {
         static void Main(string[] args)
         {
-            
+            Remote.Server Server = new Remote.Server(9999);
             Console.ReadLine();
         }
     }
