@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Remote\Remote.csproj">
+    <ProjectReference Include="..\Remote\RemoteUpdate.csproj">
       <Project>{76dc45d2-5805-40bc-9485-8a93cdd79a7f}</Project>
-      <Name>Remote</Name>
+      <Name>RemoteUpdate</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
