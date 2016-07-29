@@ -11,12 +11,7 @@ namespace UpdateServer
     {
         static void Main(string[] args)
         {
-            SharedType st = new SharedType();
-            var t =st.getProjects();
-            foreach (var item in t)
-            {
-                Console.WriteLine(item);
-            }
+            
             Console.ReadLine();
         }
     }
